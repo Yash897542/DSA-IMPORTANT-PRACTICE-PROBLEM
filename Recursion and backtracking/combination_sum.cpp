@@ -13,7 +13,8 @@ class solution{
           return ;
       }
       combine.push_back(arr[i]);
-      findcombin(i , arr , ans , combine , target - arr[i]);
+      findcombin(i+1 , arr , ans , combine , target - arr[i]);
+      findcombin(i , arr ,ans , combine , target - arr[i]);
       combine.pop_back();
       findcombin(i+1 , arr , ans , combine , target);
 
